@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        updateUI()
     }
     
     
@@ -45,7 +46,9 @@ class ViewController: UIViewController {
         
 }
     
-    
+    func updateUI(){
+        numberLabel.isHidden = true
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
